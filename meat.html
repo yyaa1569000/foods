@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+    <title>foods-美食平台</title>
+</head>
+
+
+<body>
+
+    <div class="sticky-top">
+        <div class="bg-secondary py-1">
+            <div class="container text-right">
+                <a target="blank" href="https://www.facebook.com/" class="text-white "><i
+                        class="fab fa-facebook-square"></i></a>
+                <a target="blank" href="https://www.instagram.com/" class="text-white pl-2"><i
+                        class="fab fa-instagram-square"></i></a>
+                <a target="blank" href="https://twitter.com/home" class="text-white pl-2"><i
+                        class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow p-3 mb-4 bg-white rounded">
+            <div class="container">
+                <a class="navbar-brand" style="font-family: Stencil" href="index.html">foods</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                好吃一直吃
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="meat.html">吃肉長肉</a>
+                                <a class="dropdown-item" href="vegetable.html">綠色食物</a>
+                                <a class="dropdown-item" href="seafood.html">生猛海鮮</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a target="blank" class="nav-link" href="https://www.facebook.com/">聯絡我們</a>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <div class="btn-group drop">
+                            <a class="text-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user" title="會員專區" data-toggle="tooltip" data-placement="bottom"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="login.html">會員登入</a>
+                                <a class="dropdown-item" href="register.html">免費註冊</a>
+                            </div>
+                        </div>
+                        <a class="text-dark pl-3" href="wishlist.html"><i class="fas fa-heart" title="我的收藏"
+                                data-toggle="tooltip" data-placement="bottom"></i></a>
+                        <a href="shoppingCart.html"><button type="button" class="btn btn-cart"><i
+                                    class="fas fa-shopping-cart" title="購物車" data-toggle="tooltip" data-placement="bottom"
+                                    aria-hidden="true">
+                                    <span class="badge rounded-pill bg-danger">2</span>
+                                </i></button></a>
+    
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- List group -->
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-3">
+                <div class="list-group" id="myList" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#meat"
+                        role="tab"><i class="fas fa-concierge-bell pr-1"></i>肉類</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#vegetable" role="tab"><i
+                            class="fas fa-seedling pr-1"></i>蔬菜/水果</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#sea" role="tab"><i
+                            class="fas fa-fish pr-1"></i>海鮮</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#favorite" role="tab"><i
+                            class="fas fa-heart pr-1"></i>願望清單</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#shopping" role="tab"><i
+                            class="fas fa-shopping-cart pr-1"></i>購物車</a>
+                </div>
+
+            </div>
+
+            <!-- Tab panes -->
+            <div class="col-md-9">
+                
+                <div class="tab-content">
+                    <div class="tab-pane active meat" id="meat" role="tabpanel">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-light">
+                                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">首頁</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">肉類</li>
+                            </ol>
+                        </nav>
+                        <div class="card-img">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                           <a href=""> <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1612871689028-75a788d9761d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=300);">
+
+                                            </div></a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">蒜香牛</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$399</del>
+                                                        <span class="text-danger d-flex">NT$250</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;">
+                                                            <i class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                            <a href=""><div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1608877907149-a206d75ba011?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=300);">
+                                
+                                            </div></a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">黑胡椒炭烤牛</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$430</del>
+                                                        <span class="text-danger d-flex">NT$350</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                           <a href=""> <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=300);">
+                                
+                                            </div></a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">起司牛肉堡</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$129</del>
+                                                        <span class="text-danger d-flex">NT$79</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                           <a href=""> <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1623130161074-1ec8ec4abaa0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=300);">
+                                
+                                            </div></a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">控肉</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$150</del>
+                                                        <span class="text-danger d-flex">NT$99</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                           <a href=""> <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1624174881680-24efadda7299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=300);">
+                                
+                                            </div></a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">叉燒</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$99</del>
+                                                        <span class="text-danger d-flex">NT$69</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                          <a href="">  <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1598103442097-8b74394b95c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=300);">
+                                
+                                            </div></a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">烤全雞</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$560</del>
+                                                        <span class="text-danger d-flex">NT$499</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                            <a href=""><div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1610057099443-64836ddec508?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=300);">
+                                
+                                            </div></a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">雞腿</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$69</del>
+                                                        <span class="text-danger d-flex">NT$49</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                            <a href="">
+                                            <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=300);">
+                                
+                                            </div></a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">雞肉串</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$150</del>
+                                                        <span class="text-danger d-flex">NT$99</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="vegetable" role="tabpanel">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-light">
+                                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">首頁</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">蔬菜/水果</li>
+                            </ol>
+                        </nav>
+                        <div class="card-img">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                            <a href="">
+                                                <div class="col-md bg-cover"
+                                                    style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1553395572-0ef353a212bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80);">
+                        
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">番茄</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$79</del>
+                                                        <span class="text-danger d-flex">NT$59</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;">
+                                                            <i class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                            <a href="">
+                                                <div class="col-md bg-cover"
+                                                    style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1601477572224-cb15a76f30f4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);">
+                        
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">茄子</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$99</del>
+                                                        <span class="text-danger d-flex">NT$69</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                            <a href="">
+                                                <div class="col-md bg-cover"
+                                                    style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1611096265583-5d745206f2a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=401&q=80);">
+                        
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">櫻桃</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$299</del>
+                                                        <span class="text-danger d-flex">NT$179</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                            <a href="">
+                                                <div class="col-md bg-cover"
+                                                    style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1566842600175-97dca489844f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80);">
+                        
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">花椰菜</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$139</del>
+                                                        <span class="text-danger d-flex">NT$99</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="sea" role="tabpanel">
+                        <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-light">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">首頁</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">海鮮</li>
+                        </ol>
+                    </nav>
+                    <div class="card-img">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4 mb-3">
+                                <div class="card shadow-0 mb-3">
+                                    <div class="card-image" style="position: relative;">
+                                        <a href="">
+                                            <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1559742811-822873691df8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);">
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <h5 class="card-title text-center">
+                                            <a class="d-block text-dark text-decoration-none" href="">蝦</a>
+                                        </h5>
+                                        <div class="footer">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <del class="d-flex">NT$79</del>
+                                                    <span class="text-danger d-flex">NT$59</span>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-end align-items-end">
+                                                    <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                    <a href="" class="text-dark" style="padding-left: 10px;">
+                                                        <i class="fas fa-shopping-cart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-3">
+                                <div class="card shadow-0 mb-3">
+                                    <div class="card-image" style="position: relative;">
+                                        <a href="">
+                                            <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1553659971-f01207815844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80);">
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <h5 class="card-title text-center">
+                                            <a class="d-block text-dark text-decoration-none" href="">螃蟹</a>
+                                        </h5>
+                                        <div class="footer">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <del class="d-flex">NT$599</del>
+                                                    <span class="text-danger d-flex">NT$459</span>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-end align-items-end">
+                                                    <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                    <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                            class="fas fa-shopping-cart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-3">
+                                <div class="card shadow-0 mb-3">
+                                    <div class="card-image" style="position: relative;">
+                                        <a href="">
+                                            <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1603894483438-97b51d226e70?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);">
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <h5 class="card-title text-center">
+                                            <a class="d-block text-dark text-decoration-none" href="">海鮮大總匯</a>
+                                        </h5>
+                                        <div class="footer">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <del class="d-flex">NT$1300</del>
+                                                    <span class="text-danger d-flex">NT$999</span>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-end align-items-end">
+                                                    <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                    <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                            class="fas fa-shopping-cart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-3">
+                                <div class="card shadow-0 mb-3">
+                                    <div class="card-image" style="position: relative;">
+                                        <a href="">
+                                            <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1621693146551-ee5ac0ff4563?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80);">
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <h5 class="card-title text-center">
+                                            <a class="d-block text-dark text-decoration-none" href="">生蠔</a>
+                                        </h5>
+                                        <div class="footer">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <del class="d-flex">NT$299</del>
+                                                    <span class="text-danger d-flex">NT$179</span>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-end align-items-end">
+                                                    <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                    <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                            class="fas fa-shopping-cart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                        </div>
+                    </div>
+                    </div>
+                    <div class="tab-pane" id="favorite" role="tabpanel">
+                        <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-light">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">首頁</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">願望清單</li>
+                        </ol>
+                    </nav>
+                    <div class="card-img">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4 mb-3">
+                                <div class="card shadow-0 mb-3">
+                                    <div class="card-image" style="position: relative;">
+                                        <a href="">
+                                            <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1559742811-822873691df8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);">
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <h5 class="card-title text-center">
+                                            <a class="d-block text-dark text-decoration-none" href="">蝦</a>
+                                        </h5>
+                                        <div class="footer">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <del class="d-flex">NT$79</del>
+                                                    <span class="text-danger d-flex">NT$59</span>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-end align-items-end">
+                                                    <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                    <a href="" class="text-dark" style="padding-left: 10px;">
+                                                        <i class="fas fa-shopping-cart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 mb-3">
+                                <div class="card shadow-0 mb-3">
+                                    <div class="card-image" style="position: relative;">
+                                        <a href="">
+                                            <div class="col-md bg-cover"
+                                                style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1553659971-f01207815844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80);">
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-2">
+                                        <h5 class="card-title text-center">
+                                            <a class="d-block text-dark text-decoration-none" href="">螃蟹</a>
+                                        </h5>
+                                        <div class="footer">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <del class="d-flex">NT$599</del>
+                                                    <span class="text-danger d-flex">NT$459</span>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-end align-items-end">
+                                                    <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                    <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                            class="fas fa-shopping-cart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="tab-pane" id="shopping" role="tabpanel">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-light">
+                                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">首頁</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">購物車</li>
+                            </ol>
+                        </nav>
+                        <div class="card-img">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                            <a href="">
+                                                <div class="col-md bg-cover"
+                                                    style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1608877907149-a206d75ba011?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=300);">
+                                
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">黑胡椒炭烤牛</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$430</del>
+                                                        <span class="text-danger d-flex">NT$350</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 mb-3">
+                                    <div class="card shadow-0 mb-3">
+                                        <div class="card-image" style="position: relative;">
+                                            <a href="">
+                                                <div class="col-md bg-cover"
+                                                    style=" position: absolute; top: 0; bottom: 0; background-image: url(https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=300);">
+                                
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="card-body py-2">
+                                            <h5 class="card-title text-center">
+                                                <a class="d-block text-dark text-decoration-none" href="">起司牛肉堡</a>
+                                            </h5>
+                                            <div class="footer">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <del class="d-flex">NT$129</del>
+                                                        <span class="text-danger d-flex">NT$79</span>
+                                                    </div>
+                                                    <div class="col-6 d-flex justify-content-end align-items-end">
+                                                        <a href="" class="text-dark"><i class="fas fa-heart"></i></a>
+                                                        <a href="" class="text-dark" style="padding-left: 10px;"><i
+                                                                class="fas fa-shopping-cart"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container-fluid bg-dark py-4">
+            <div class="container">
+                <div class="row m-auto">
+                    <div class="col-md-4 text-center">
+                        <h5 class="text-white">foods</h5>
+                        <ul class="list-unstyled text-white ">
+                            <li><a class="text-white" href="#">品牌故事</a></li>
+                            <li><a class="text-white" href="#">常見問題</a></li>
+                            <li><a class="text-white" href="#">商店簡介</a></li>
+                            <li><a class="text-white" href="#">隱私政策</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h5 class="text-white">關注我們</h5>
+                        <ul class="list-unstyled">
+                            <li><a target="blank" class="text-white" href="https://www.facebook.com/">Facebook</a></li>
+                            <li><a target="blank" class="text-white" href="https://www.instagram.com/">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h5 class="text-white">客戶服務</h5>
+                        <ul class="list-unstyled">
+                            <li class="text-white">Tel:0800-123-456</li>
+                            <li class="text-white">Monday-Friday:9am-18pm</li>
+                            <li class="text-white">yyaa1569@yahoo.com.tw</li>
+                            <li class="text-white">Line ID:yyaa1569</li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <p>@2021 by 龍龍
+                            本站僅作品練習，圖資來源為網路資源，無任何商業營利用途</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    </footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+        <script src="js/all.js"></script>
+</body>
+
+</html>
